@@ -33,9 +33,19 @@ header {
 }
 
 .logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+
+.nav-title {
   font-size: 1.6em;
   font-weight: bold;
   color: #fff;
+  width: 400px;
+  text-align: center;
 }
 
 .logo a {
@@ -100,10 +110,11 @@ nav a:hover {
 }
 
 .hero .overlay {
-  position: relative;
+  position: absolute;
+  bottom: 25px;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 3em;
+  padding: 1em;
   border-radius: 1em;
   backdrop-filter: blur(6px);
   animation: fadeIn 1.5s ease-in-out;
@@ -139,13 +150,8 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 2.5em;
+  font-size: 1.5em;
   color: #fff;
-}
-
-.hero p {
-  font-size: 1.2em;
-  color: #ddd;
 }
 
 
@@ -424,7 +430,33 @@ footer {
   height: 30px;
 }
 
+/* Call Icon*/
 
+.call-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  left: 20px;
+  background-color: #2196F3; /* color verde oscuro para llamadas */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.call-float:hover {
+  transform: scale(1.1);
+  background-color: #1e88e5;
+}
+
+.call-icon {
+  width: 30px;
+  height: 30px;
+}
 
 
 
@@ -532,3 +564,4 @@ footer {
 .gallery-container img:hover {
   transform: scale(1.05);
 }
+
